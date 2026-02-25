@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Inteligência Artificial Animada</title>
+
   <style>
-    /* Fonte e cores base */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
     body {
@@ -16,8 +16,8 @@
       text-align: center;
       overflow-x: hidden;
     }
-
-    /* Animação de brilho no título */
+ 
+    /* Animação do título */
     @keyframes brilho {
       0%, 100% {
         text-shadow: 0 0 8px aquamarine, 0 0 20px aquamarine;
@@ -34,7 +34,6 @@
       animation: brilho 3s ease-in-out infinite;
     }
 
-    /* Subtítulo animado com efeito leve de translado para cima e baixo */
     @keyframes upDown {
       0%, 100% {
         transform: translateY(0);
@@ -52,30 +51,26 @@
       margin: 0 auto 30px auto;
       animation: upDown 5s ease-in-out infinite;
       line-height: 1.5;
-      color: aquamarine;
     }
 
     p.intro span {
       color: pink;
       font-weight: 600;
       text-shadow: 0 0 5px pink;
+
     }
 
     h2 {
       font-size: 1.8rem;
       margin-bottom: 20px;
-      color: aquamarine;
       font-weight: 700;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 10px;
-      cursor: default;
-      user-select: none;
       animation: upDown 4s ease-in-out infinite;
     }
 
-    /* Container principal */
     .container {
       background-color: #1e1e1e;
       max-width: 700px;
@@ -83,36 +78,29 @@
       padding: 25px 30px;
       border-radius: 20px;
       box-shadow: 0 0 15px rgba(0, 255, 200, 0.4);
-      color: aquamarine;
       font-size: 1.2rem;
       line-height: 1.6;
-      transition: box-shadow 0.3s ease;
-    }
-
-    /* Sombra mais forte ao passar mouse */
-    .container:hover {
-      box-shadow: 0 0 30px #00fff7, 0 0 50px #00fff7;
-      transform: translateY(-8px);
       transition: all 0.3s ease;
     }
 
-    /* Títulos das seções com emoji animado */
+    .container:hover {
+      box-shadow: 0 0 30px #00fff7, 0 0 50px #00fff7;
+      transform: translateY(-8px);
+    }
+
     h3 {
-      color: #f5e942;a
+      color: #f5e942;
       margin-top: 25px;
       font-weight: 700;
       display: flex;
       align-items: center;
       gap: 10px;
       font-size: 1.4rem;
-      user-select: none;
     }
 
-    /* Animação leve no emoji */
     .emoji-animado {
       display: inline-block;
       animation: bounce 2s infinite;
-      transform-origin: 50% 50%;
     }
 
     @keyframes bounce {
@@ -120,32 +108,18 @@
       50% { transform: translateY(-6px); }
     }
 
-    /* Texto dos parágrafos das seções */
     .container p {
       text-align: left;
       margin: 8px 0 0 25px;
       color: #80ffdb;
-      font-weight: 400;
     }
 
-    /* Listas dentro do container (●) */
     .bullet {
       color: aquamarine;
       font-weight: bold;
       margin-right: 8px;
     }
 
-    /* Links dentro do texto */
-    a {
-      color: #00ffe4;
-      text-decoration: underline;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #80fff7;
-    }
-
-    /* Responsividade */
     @media (max-width: 768px) {
       .container {
         width: 90%;
@@ -160,14 +134,33 @@
       p.intro {
         font-size: 1.1rem;
       }
+
+      .textos-container {
+  max-width: 400px;       /* limita a largura máxima */
+  margin: 0 auto;         /* centraliza horizontalmente */
+  text-align: center;     /* centraliza o texto dentro do container */
+  line-height: 1.6;       /* espaçamento entre linhas para melhor leitura */
+  color: aquamarine;      /* cor do texto */
+  font-family: 'Poppins', sans-serif;
+}
+
+.textos-container h4,
+.textos-container h5,
+.textos-container h6 {
+  margin-bottom: 20px;    /* espaçamento entre os textos */
+}
+
     }
   </style>
 </head>
+
 <body>
-  <h1>Apresento a vôces a Inteligência Artificial A Famosa IA 🤖</h1>
+
+
+  <h1>Apresento a vocês a Inteligência Artificial A Famosa IA 🤖</h1>
 
   <p class="intro">
-    A <span>Inteligência Artificial</span> (IA) é uma área da tecnologia que cria sistemas capazes de simular habilidades humanas, como aprender, raciocinar, reconhecer padrões, tomar decisões e até conversar.
+    A <span> Inteligência Artificial</span> (IA) é uma área da tecnologia que cria sistemas capazes de simular habilidades humanas, como aprender, raciocinar, reconhecer padrões, tomar decisões e até conversar.
     Em vez de seguir apenas regras fixas, a IA pode analisar dados, aprender com eles e melhorar com o tempo.
   </p>
 
@@ -175,15 +168,38 @@
 
   <div class="container">
     <h3><span class="emoji-animado">1️⃣</span> Aprendizado de Máquina (Machine Learning)</h3>
-    <p><span class="bullet">●</span> A máquina aprende com exemplos. Por exemplo: você mostra milhares de fotos
-      de gatos e cachorros, e ela aprende a diferenciar os dois.</p>
+    <p><span class="bullet">●</span> A máquina aprende com exemplos. Por exemplo: você mostra milhares de fotos de gatos e cachorros, e ela aprende a diferenciar os dois.</p>
 
     <h3><span class="emoji-animado">2️⃣</span> Redes Neurais</h3>
-    <p><span class="bullet">●</span> Inspiradas no cérebro humano, ajudam a IA a reconhecer padrões complexos
-      (como voz e imagem).</p>
+    <p><span class="bullet">●</span> Inspiradas no cérebro humano, ajudam a IA a reconhecer padrões complexos (como voz e imagem).</p>
 
     <h3><span class="emoji-animado">3️⃣</span> IA Generativa</h3>
-    <p><span class="bullet">●</span> Cria coisas novas, como textos, imagens, músicas e vídeos.</p>
-  </div>
+    <p><span class="bullet">●</span> Cria coisas novas, como textos, imagens, músicas e vídeos.</p> </div>
+
+
+    <p style="text-align: center; font-size: x-large; font-weight: bold;"> A IA tem muitos Beneficios!</p>
+
+<div class="textos-container"
+
+
+<h4> 1️⃣ Automação de tarefas repetitivas
+A IA pode realizar tarefas automáticas com rapidez e precisão, como organizar dados, responder mensagens ou analisar documentos.
+👉 Isso economiza tempo e aumenta a produtividade. 
+  </h4>
+
+<h5>
+2️⃣ Tomada de decisões mais inteligentes
+A IA consegue analisar grandes quantidades de dados em segundos e identificar padrões que humanos talvez não percebam.
+👉 Muito usada em áreas como medicina, finanças e segurança.
+</h5>
+S
+<h6>
+3️⃣ Criação e inovação (IA Generativa)
+A IA pode criar textos, imagens, músicas e até vídeos.
+👉 Ajuda na criatividade, no marketing, na educação e no desenvolvimento de novas tecnologias.
+</h6>  
+
+</div>
+
 </body>
 </html>
